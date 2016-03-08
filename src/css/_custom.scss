@@ -1,0 +1,74 @@
+/* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
+
+/* inject:imports */
+/* endinject */
+
+/* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.pt {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .icon-4x {
+    font-size: 4em;
+  }
+
+  .icon-2x {
+    font-size: 2em;
+  }
+
+  #wrapper {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    #top {
+      display: table;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: url(../images/custom/bg.jpg) no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover;
+
+      .text-vertical-center {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+
+        .main-selector {
+          background-color: rgba(0, 0, 0, 0.3);
+          padding-bottom: 20px;
+          padding-top: 20px;
+          color: white;
+        }
+      }
+    }
+  }
+
+  footer {
+    height: 100px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+    text-align: center;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .icon-3x {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    .powered-by {
+      margin-top: 10px;
+    }
+  }
+
+}
